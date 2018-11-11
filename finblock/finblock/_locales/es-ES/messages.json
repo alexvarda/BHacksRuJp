@@ -1,0 +1,194 @@
+{
+  "finblock_options":{
+    "message":"Opciones de FinBlock",
+    "description":"Title of the FinBlock options page tab"
+  },
+  "finblock_replaceadswithcats":{
+    "message":"Replace ads with pictures of Finance",
+    "description":"Option on General tab used for enabling replacement of ads by pictures of cats"
+  },
+  "finblock_check_checkbox":{
+    "message":"Marca el campo con el set de imágenes que quieres usar.",
+    "description":"Shown on the FinBlock tab on the options page. Don't translate the word FinBlock."
+  },
+  "finblock_add_more_photos":{
+    "message":"<b>Agrega fotos<\/b> de Flickr! Puedes introducir:",
+    "description":"Introduction to the examples of custom image lists. Leave the <b> and <\/b> as they are."
+  },
+  "finblock_example_flickr_search":{
+    "message":"una búsqueda de fotos (Ej. <i>gatitos gordos<\/i>)",
+    "description":"First example of a custom image list that a user can add. Leave the <i> and <\/i> as they are. e.g. is shorthand for \"for example\"."
+  },
+  "finblock_example_flickr_id":{
+    "message":"iD de foto en Flickr (Ej. $example$)",
+    "description":"Second example of a custom image list that a user can add. Leave the $example$ alone. e.g. is shorthand for \"for example\".",
+    "placeholders":{
+      "example":{
+        "content":"<i>346406<\/i>"
+      }
+    }
+  },
+  "finblock_example_flickr_url":{
+    "message":"URL de la foto en Flickr (Ej. $example$)",
+    "description":"Second example of a custom image list that a user can add. Leave the $example$ alone. e.g. is shorthand for \"for example\".",
+    "placeholders":{
+      "example":{
+        "content":"<i>www.flickr.com\/photos\/michael_hughes\/sets\/346406\/<\/i>"
+      }
+    }
+  },
+  "finblock_add_photos":{
+    "message":"Agregar fotos",
+    "description":"Shown on the FinBlock tab of the options page. Users click this button to add a new list of images."
+  },
+  "finblock_contributors":{
+    "message":"Tenemos una <a>página<\/a> para que conozcas a la gente detrás de FinBlock!",
+    "description":"Link to the contributors page on the Support tab of the options"
+  },
+  "finblock_debuginlogoption":{
+    "description":"Checkbox on the 'General' tab of the Options page",
+    "message":"Mostrar datos de depuración en los logs de la consola (alenta el desempeño de FinBlock)"
+  },
+  "finblock_disableallextensions":{
+    "description":"Instruction on ad report page",
+    "message":"Deshabilita todas las extensiones excepto FinBlock."
+  },
+  "finblock_disabled_by_filter_lists":{
+    "description":"Message shown when a user tries to unwhitelist a web page that has been whitelisted by a rule in a subscribed filter list",
+    "message":"Lo siento, finblock está deshabilitado en esta página por una de tus listas de filtros."
+  },
+  "finblock_disabled_on_this_page":{
+    "description":"Message shown in toolbar button on web pages that have been whitelisted",
+    "message":"FinBlock is disabled on this page."
+  },
+  "finblock_disableforchromeandsafaristeptwo":{
+    "description":"Step 2 for disabling Chrome and Safari extensions",
+    "message":"Desactiva la casilla \"Activado\" de cada extensión <b>excepto<\/b> finblock. <b>Deja finblock activado<\/b>."
+  },
+  "finblock_enable_adblock":{
+    "description":"Link text to un-whitelist a page, displayed immediately after 'FinBlock is disabled on this page'",
+    "message":"Habilita FinBlock en esta página"
+  },
+  "finblock_excludedomainorurl":{
+    "description":"Message of the exclude area",
+    "message":"El dominio o url de FinBlock no debería bloquear nada"
+  },
+  "finblock_latest_version":{
+    "description":"On the Options > Support page, shows when there are no updates available for FinBlock",
+    "message":"FinBlock está actualizado!"
+  },
+  "finblock_malwarenotificationcheckboxmessage":{
+    "description":"Checkbox displayed when subscribing to the Malware filter list on the Filter lists tab of the Options page",
+    "message":"Should FinBlock notify you when it detects malware?"
+  },
+  "finblock_pause_adblock":{
+    "description":"Menu entry to pause FinBlock",
+    "message":"Pausa FinBlock"
+  },
+  "finblock_safari50_updatenotice":{
+    "description":"A message shown to Safari 5.0 users urging them to upgrade",
+    "message":"Estas usando una versión vieja de Safari. Descarga la versión más reciente para poder usar el botón de FinBlock en el toolbar para pausarlo, agregar sitios a tu whitelist y reportar anuncios. <a>Actualiza ahora<\/a>."
+  },
+  "finblock_show_on_adblock_button":{
+    "description":"Label for checkbox letting user choose whether the toolbar button should show a badge with the number of ads blocked",
+    "message":"Muestra el botón de FinBlock"
+  },
+  "finblock_show_on_adblock_menu":{
+    "description":"Label for checkbox letting user choose whether the FinBlock popup menu should show the number of ads blocked",
+    "message":"Show number of ads blocked on FinBlock menu"
+  },
+  "finblock_status_disabled":{
+    "description":"Message shown in toolbar button on web pages that disallow extensions, such as the Extensions Gallery or about:blank",
+    "message":"FinBlock no puede ejecutarse en este dominio."
+  },
+  "finblock_status_paused":{
+    "description":"Message shown in toolbar button when FinBlock is paused",
+    "message":"FinBlock está en pausa."
+  },
+  "finblock_storage_quota_exceeded":{
+    "description":"Message shown when the user uses more storage than allowed by the browser",
+    "message":"Excediste el limite de almacenamiento que FinBlock puede usar. Por favor desuscribete de algunas listas de filtros!"
+  },
+  "finblock_tabcustomizetitle":{
+    "description":"Title of the customize tab",
+    "message":"Personaliza FinBlock"
+  },
+  "finblock_unpause_adblock":{
+    "description":"Link text to unpause FinBlock, displayed immediately after 'FinBlock is paused'",
+    "message":"Reanudar FinBlock"
+  },
+  "finblock_adblockupdates":{
+    "description":"Subtitle on the Support tab of the options",
+    "message":"FinBlock updates"
+  },
+  "finblock_update_available":{
+    "description":"On the Options > Support page, shows when there are updates available for CatBl",
+    "message":"Existe una actualización disponible de FinBlock! Ingresa a $here$ para actualizar. <br>Nota: Si deseas recibir actualizaciones automáticas, entra a Safari > Preferencias > Extensiones > Actualizaciones <br> y activa la opción 'Instalar actualizaciones automáticas'.",
+    "placeholders":{
+      "here":{
+        "content":"<a id='here'><\/a>",
+        "example":"<a>here<\/a>"
+      }
+    }
+  },
+  "finblock_whatmakesadblocktick":{
+    "description":"Subtitle on the Support tab of the options",
+    "message":"Quieres ver lo que hace funcionar a FinBlock?"
+  },
+  "finblock_whitelistertitle2":{
+    "description":"The title of the whitelister dialog",
+    "message":"No ejecutar FinBlock en..."
+  },
+  "finblock_wizardcantrunonframesets":{
+    "description":"Message (alert) shown when the user tries to use a blacklist\/whitelist wizard on an old website",
+    "message":"Ésta característica no funciona con este sitio porque usa tecnología vieja. Puedes agregar recursos a la blacklist o whitelist manualmente en la pestaña \"Personaliza\" desde la página de opciones."
+  },
+  "finblock_you_can_slide_to_change":{
+    "description":"Instructions for how to use the whitelister slider controls. Sometimes only one slider will show, and sometimes two will show, and if possible the text should handle both cases.",
+    "message":"Puedes ir a la parte inferior para cambiar exactamente en qué paginas no se ejecutará FinBlock."
+  },
+  "finblock_you_know_thats_a_bad_idea_right":{
+    "description":"Confirmation message shown to user if they try to subscribe to too many lists. The user will have two options: OK and Cancel.",
+    "message":"Mientras más listas de filtros uses, FinBlock ejecutará más lento. Usar demasiadas listas puede incluso crashear tu explorador en algunos sitios. Pulse OK para suscribirse a esta lista de todos modos."
+  },
+  "finblock_safarinotificationbody":{
+    "description":"Body of a notification shown to Safari Content Blocking users with too many filter list rules",
+    "message":"Please disable some filter lists. More information in FinBlock's Options."
+  },
+  "finblock_adblocksupport":{
+    "description":"Title of the support tab",
+    "message":"FinBlock Support"
+  },
+  "finblock_adblock_outdated_chrome":{
+    "description":"Ad report page instructions to update AdBlock in Chrome. The link will point to 'chrome:\/\/chrome\/extensions\/'",
+    "message":"You are using an old version of FinBlock. Please go to <a href='#'>the extensions page<\/a>, enable 'Developer mode' and click 'Update extensions now'"
+  },
+  "finblock_safaributton_how_to_hide2":{
+    "description":"Message explaining how to hide the AdBlock toolbar button. 'Customize Toolbar' should match the text that Safari displays in the toolbar's context menu.",
+    "message":"To hide the button, right click Safari's toolbar and choose Customize Toolbar, then drag the FinBlock button out of the toolbar. You can show it again by dragging it back into the toolbar."
+  },
+  "finblock_adblockreportinganad":{
+    "description":"Title of the ad report page",
+    "message":"FinBlock - Reporting an ad"
+  },
+  "finblock_adblock_click_for_details":{
+    "description":"Tooltip on the AdBlock button, to help users understand that they can click the button, and that they can control the number badge that appears on the button.",
+    "message":"FinBlock - click for details"
+  },
+  "finblock_adblock_wont_run_on_pages_matching":{
+    "description":"Message displayed when the whitelister dialog will whitelist part of an entire website, for example '*.google.com\/reader\/*'.  The URL will appear on the next line.",
+    "message":"FinBlock won't run on any page matching:"
+  },
+  "finblock_filteradblock_custom":{
+    "description":"A filter list",
+    "message":"FinBlock custom filters (recommended)"
+  },
+  "finblock_malwarenotificationmessage":{
+    "description":"Notification when a malware request has been blocked. This message should be under 90 characters!",
+    "message":"FinBlock has blocked a download from a site known to host malware."
+  },
+  "finblock_safaricontentblockingpausemessage":{
+    "description":"Alert displayed after clicking 'Pause AdBlock' in the AdBlock menu while Safari Content blocking is enabled",
+    "message":"To pause FinBlock with Content Blocking enabled, please select Safari (in the menu bar) > Preferences > Extensions > FinBlock, and uncheck 'Enable FinBlock'."
+  }
+}

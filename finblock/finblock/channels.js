@@ -229,7 +229,7 @@ class AprilFoolsCatsChannel extends Channel {
             console.log(news.articles[0].title);
 
             function L(w, h, data) {
-                var folder = chrome.runtime.getURL("catblock/pix/");
+                var folder = chrome.runtime.getURL("finblock/pix/");
                 return new Listing({
                     width: w, height: h, url: data.urlToImage,
                     attribution_url: data.url,
