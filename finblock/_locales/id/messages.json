@@ -31,7 +31,7 @@
     "message":"Kami tidak memiliki filter baku untuk bahasa tersebut.<br/>Silahkan mencari daftar yang cocok yang mendukung bahasa ini $link$ atau or blokir iklan ini untuk anda sendiri pada tab 'Penyesuaian'.",
     "description":"Instructions on ad report page pointing users to EasyList subscriptions list. 'Customize' should be the same text as the name of the 'Customize' tab."
   },
-  "finblock_malwarenotificationmessage":{
+  "catblock_malwarenotificationmessage":{
     "message":"FinBlock has blocked a download from a site known to host malware.",
     "description":"Notification when a malware request has been blocked. This message should be under 90 characters!"
   },
@@ -39,7 +39,7 @@
     "message":"Komputer Anda mungkin terinfeksi oleh malware. Klik <a>di sini</a> untuk informasi lebih lanjut.",
     "description":"On the ad report page, the ads the user is seeing might be caused by malware/adware"
   },
-  "finblock_contributors":{
+  "catblock_contributors":{
     "message":"We've got a <a>page</a> to help you find out about the people behind FinBlock, as well!",
     "description":"Link to the contributors page on the Support tab of the options"
   },
@@ -87,7 +87,7 @@
     "message":"Apa ini?",
     "description":"Text of a link pointing to the explanation of a new feature"
   },
-  "finblock_you_know_thats_a_bad_idea_right":{
+  "catblock_you_know_thats_a_bad_idea_right":{
     "message":"The more filter lists you use, the slower FinBlock runs. Using too many lists can even crash your browser on some websites. Press OK to subscribe to this list anyway.",
     "description":"Confirmation message shown to user if they try to subscribe to too many lists. The user will have two options: OK and Cancel."
   },
@@ -107,7 +107,7 @@
     "message":"frame",
     "description":"A resource type"
   },
-  "finblock_safarinotificationbody":{
+  "catblock_safarinotificationbody":{
     "message":"Please disable some filter lists. More information in FinBlock's Options.",
     "description":"Body of a notification shown to Safari Content Blocking users with too many filter list rules"
   },
@@ -169,7 +169,7 @@
     "message":"Tipe",
     "description":"node name is called 'Type'"
   },
-  "finblock_example_flickr_id":{
+  "catblock_example_flickr_id":{
     "placeholders":{
       "example":{
         "content":"<i>346406</i>"
@@ -178,7 +178,7 @@
     "message":"a Flickr photoset ID (e.g. $example$)",
     "description":"Second example of a custom image list that a user can add. Leave the $example$ alone. e.g. is shorthand for \"for example\"."
   },
-  "finblock_adblockreportinganad":{
+  "catblock_adblockreportinganad":{
     "message":"FinBlock - Reporting an ad",
     "description":"Title of the ad report page"
   },
@@ -284,7 +284,7 @@
     "message":"Membetulkan video Hulu.com yang tidak bisa dimainkan (harus muat ulang browser anda)",
     "description":"Advanced Options page checkbox, which users only need to use if Hulu.com videos break. It directs the user to restart their browser in order for changes to the checkbox to take effect."
   },
-  "finblock_disableforchromeandsafaristeptwo":{
+  "catblock_disableforchromeandsafaristeptwo":{
     "message":"Uncheck the 'Enabled' checkbox next to every extension <b>except</b> for FinBlock.  <b>Leave FinBlock enabled</b>.",
     "description":"Step 2 for disabling Chrome and Safari extensions"
   },
@@ -296,7 +296,7 @@
     "message":"Ekstensi yang telah dinonaktifkan sebelumnya telah diaktifkan kembali.",
     "description":"On the ad report page, alert notifying users that we've re-enabled extensions that were previously disabled"
   },
-  "finblock_example_flickr_url":{
+  "catblock_example_flickr_url":{
     "placeholders":{
       "example":{
         "content":"<i>www.flickr.com/photos/michael_hughes/sets/346406/</i>"
@@ -313,7 +313,7 @@
     "message":"Iklan yang dapat diterima (disarankan)",
     "description":"A filter list"
   },
-  "finblock_check_checkbox":{
+  "catblock_check_checkbox":{
     "message":"Check the checkbox by the sets of pictures that you want to use.",
     "description":"Shown on the FinBlock tab on the options page. Don't translate the word FinBlock."
   },
@@ -321,7 +321,7 @@
     "message":"Bahasa Yunani",
     "description":"language"
   },
-  "finblock_status_disabled":{
+  "catblock_status_disabled":{
     "message":"FinBlock can not run on this domain.",
     "description":"Message shown in toolbar button on web pages that disallow extensions, such as the Extensions Gallery or about:blank"
   },
@@ -351,7 +351,7 @@
     "message":"Anda melebihi jumlah penyimpanan yang bisa dipakai oleh AdBlock. Batalkanlah langganan anda dari beberapa daftar filter!",
     "description":"Message shown when the user uses more storage than allowed by the browser"
   },
-  "finblock_disableallextensions":{
+  "catblock_disableallextensions":{
     "message":"Disable all extensions except for FinBlock.",
     "description":"Instruction on ad report page"
   },
@@ -359,7 +359,7 @@
     "message":"Catatan: laporan anda mungkin akan tersedia untuk umum. Ingatlah itu sebelum anda menyertakan apapun yang bersifat pribadi.",
     "description":"Ad report page string, when you're about to submit a report"
   },
-  "finblock_example_flickr_search":{
+  "catblock_example_flickr_search":{
     "message":"a search for photos (e.g. <i>sailboat race</i>)",
     "description":"First example of a custom image list that a user can add. Leave the <i> and </i> as they are. e.g. is shorthand for \"for example\"."
   },
@@ -419,7 +419,7 @@
     "message":"Sesuaikan AdBlock",
     "description":"Title of the customize tab"
   },
-  "finblock_adblocksupport":{
+  "catblock_adblocksupport":{
     "message":"FinBlock Support",
     "description":"Title of the support tab"
   },
@@ -427,7 +427,7 @@
     "message":"Nonaktifkan pemberitahuan ini",
     "description":"Button on the malware notification to disable future notifications. Message should be under 45 characters!"
   },
-  "finblock_show_on_adblock_menu":{
+  "catblock_show_on_adblock_menu":{
     "message":"Show number of ads blocked on FinBlock menu",
     "description":"Label for checkbox letting user choose whether the FinBlock popup menu should show the number of ads blocked"
   },
@@ -447,7 +447,7 @@
     "message":"Batal",
     "description":"Cancel button"
   },
-  "finblock_malwarenotificationcheckboxmessage":{
+  "catblock_malwarenotificationcheckboxmessage":{
     "message":"Should FinBlock notify you when it detects malware?",
     "description":"Checkbox displayed when subscribing to the Malware filter list on the Filter lists tab of the Options page"
   },
@@ -475,7 +475,7 @@
     "message":"tidak diketahui",
     "description":"A resource type"
   },
-  "finblock_replaceadswithcats":{
+  "catblock_replaceadswithcats":{
     "message":"Replace ads with pictures of Finance",
     "description":"Option on General tab used for enabling replacement of ads by pictures of cats"
   },
@@ -509,11 +509,11 @@
     "message":"skrip",
     "description":"A resource type"
   },
-  "finblock_safaributton_how_to_hide2":{
+  "catblock_safaributton_how_to_hide2":{
     "message":"To hide the button, right click Safari's toolbar and choose Customize Toolbar, then drag the FinBlock button out of the toolbar. You can show it again by dragging it back into the toolbar.",
     "description":"Message explaining how to hide the AdBlock toolbar button. 'Customize Toolbar' should match the text that Safari displays in the toolbar's context menu."
   },
-  "finblock_update_available":{
+  "catblock_update_available":{
     "placeholders":{
       "here":{
         "content":"<a id='here'></a>",
@@ -563,7 +563,7 @@
     "message":"Jangan berangganan lebih dari yang anda butuhkan -- setiap satunya akan sedikit memperlambat anda! Kredit dan lebih banyak daftar dapat ditemukan <a>Disini</a>.",
     "description":"Explanation of the filter lists"
   },
-  "finblock_safaricontentblockingpausemessage":{
+  "catblock_safaricontentblockingpausemessage":{
     "message":"To pause FinBlock with Content Blocking enabled, please select Safari (in the menu bar) > Preferences > Extensions > FinBlock, and uncheck 'Enable FinBlock'.",
     "description":"Alert displayed after clicking 'Pause AdBlock' in the AdBlock menu while Safari Content blocking is enabled"
   },
@@ -591,7 +591,7 @@
     "message":"Berlangganan daftar filter...",
     "description":"abp: link subscriber title"
   },
-  "finblock_debuginlogoption":{
+  "catblock_debuginlogoption":{
     "message":"Show debug statements in Console Log (which slows down FinBlock)",
     "description":"Checkbox on the 'General' tab of the Options page"
   },
@@ -615,7 +615,7 @@
     "message":"Aktifkan modus kompatibilitas ClickToFlash",
     "description":"Checkbox on the 'General' tab of the Options page. Allow AdBlock and the ClickToFlash Safari extension to work simultaneously on YouTube."
   },
-  "finblock_adblock_click_for_details":{
+  "catblock_adblock_click_for_details":{
     "message":"FinBlock - click for details",
     "description":"Tooltip on the AdBlock button, to help users understand that they can click the button, and that they can control the number badge that appears on the button."
   },
@@ -723,7 +723,7 @@
     "message":"Video dan Flash",
     "description":"Title of the final ad report question if the ad didn't appear in Firefox"
   },
-  "finblock_you_can_slide_to_change":{
+  "catblock_you_can_slide_to_change":{
     "message":"You can slide below to change exactly what pages FinBlock won't run on.",
     "description":"Instructions for how to use the whitelister slider controls. Sometimes only one slider will show, and sometimes two will show, and if possible the text should handle both cases."
   },
@@ -747,7 +747,7 @@
     "message":"Untuk menyembunyikan tombol, klik kanan toolbar Safari dan pilih Customize Toolbar, kemudian tarik tombol AdBlock dari toolbar. Anda dapat menampilkannya lagi dengan menariknya kembali ke toolbar.",
     "description":"Message explaining how to hide the AdBlock toolbar button. 'Customize Toolbar' should match the text that Safari displays in the toolbar's context menu."
   },
-  "finblock_unpause_adblock":{
+  "catblock_unpause_adblock":{
     "message":"Unpause FinBlock",
     "description":"Link text to unpause FinBlock, displayed immediately after 'FinBlock is paused'"
   },
@@ -787,7 +787,7 @@
     "message":"Pengaturan Umum",
     "description":"Title of first tab page"
   },
-  "finblock_wizardcantrunonframesets":{
+  "catblock_wizardcantrunonframesets":{
     "message":"This feature does not work on this site because it uses out of date technology. You can blacklist or whitelist resources manually in the 'Customize' tab of the options page.",
     "description":"Message (alert) shown when the user tries to use a blacklist/whitelist wizard on an old website"
   },
@@ -821,11 +821,11 @@
     "message":"Mencari iklan...<br/><br/><i>hanya sebentar saja.</i>",
     "description":"When you press ctrl-shift-K the blacklister searches for ads"
   },
-  "finblock_excludedomainorurl":{
+  "catblock_excludedomainorurl":{
     "message":"The domain or url where FinBlock shouldn't block anything",
     "description":"Message of the exclude area"
   },
-  "finblock_add_photos":{
+  "catblock_add_photos":{
     "message":"Add Photos",
     "description":"Shown on the FinBlock tab of the options page. Users click this button to add a new list of images."
   },
@@ -833,7 +833,7 @@
     "message":"Hebat! Sekarang mari kita menemukan ekstensi yang adalah penyebab. Pergi dan aktifkan ekstensi setiap satu per satu. Ekstensi yang membawa kembali iklan adalah yang Anda butuhkan untuk dihapus untuk menyingkirkan iklan.",
     "description":"Tells the user to reenable the extensions one by one"
   },
-  "finblock_safari50_updatenotice":{
+  "catblock_safari50_updatenotice":{
     "message":"You are using an old version of Safari. Get the latest version in order to use the FinBlock toolbar button to pause FinBlock, whitelist websites, and report ads. <a>Upgrade now</a>.",
     "description":"A message shown to Safari 5.0 users urging them to upgrade"
   },
@@ -853,7 +853,7 @@
     "message":"Bekukan AdBlock",
     "description":"Menu entry to pause AdBlock"
   },
-  "finblock_adblockupdates":{
+  "catblock_adblockupdates":{
     "message":"FinBlock updates",
     "description":"Subtitle on the Support tab of the options"
   },
@@ -887,11 +887,11 @@
     "message":"Daftar filter memblokir banyak iklan di web. Anda juga bisa:",
     "description":"Header text on the Customize tab. 'Filter lists' should be the same text as the name of the 'Filter lists' tab."
   },
-  "finblock_whitelistertitle2":{
+  "catblock_whitelistertitle2":{
     "message":"Don't run FinBlock on...",
     "description":"The title of the whitelister dialog"
   },
-  "finblock_filteradblock_custom":{
+  "catblock_filteradblock_custom":{
     "message":"FinBlock custom filters (recommended)",
     "description":"A filter list"
   },
@@ -927,7 +927,7 @@
     "message":"Melaporkan iklan bersifat sukarela. Hal ini membantu orang lain dengan mengaktifkan pengelola daftar filter untuk memblokir iklan untuk semua orang. Jika Anda tidak merasa altruistik sekarang ini, tidak apa-apa. Tutup halaman ini dan <a>blok iklan</a> hanya untuk diri sendiri.",
     "description":"Introduction of the ad reporting page"
   },
-  "finblock_disabled_on_this_page":{
+  "catblock_disabled_on_this_page":{
     "message":"FinBlock is disabled on this page.",
     "description":"Message shown in toolbar button on web pages that have been whitelisted"
   },
@@ -961,7 +961,7 @@
     "message":"Italia",
     "description":"language"
   },
-  "finblock_enable_adblock":{
+  "catblock_enable_adblock":{
     "message":"Enable FinBlock on this page",
     "description":"Link text to un-whitelist a page, displayed immediately after 'FinBlock is disabled on this page'"
   },
@@ -993,7 +993,7 @@
     "message":"Pastikan Anda menggunakan filter bahasa yang tepat:",
     "description":"On the ad report page, label describing having the right set of filters"
   },
-  "finblock_add_more_photos":{
+  "catblock_add_more_photos":{
     "message":"<b>Add some photos</b> from Flickr!  You can enter:",
     "description":"Introduction to the examples of custom image lists. Leave the <b> and </b> as they are."
   },
@@ -1015,7 +1015,7 @@
     "message":"Bulgaria",
     "description":"language"
   },
-  "finblock_storage_quota_exceeded":{
+  "catblock_storage_quota_exceeded":{
     "message":"You exceeded the amount of storage FinBlock can use. Please unsubscribe from some filter lists!",
     "description":"Message shown when the user uses more storage than allowed by the browser"
   },
@@ -1039,7 +1039,7 @@
     "message":"Tambahkan filter untuk bahasa lain: ",
     "description":"Dropdown list for language-specific filters"
   },
-  "finblock_options":{
+  "catblock_options":{
     "message":"FinBlock Options",
     "description":"Title of the FinBlock options page tab"
   },
@@ -1055,7 +1055,7 @@
     "message":"Inggris",
     "description":"language"
   },
-  "finblock_latest_version":{
+  "catblock_latest_version":{
     "message":"FinBlock is up-to-date!",
     "description":"On the Options > Support page, shows when there are no updates available for FinBlock"
   },
@@ -1075,7 +1075,7 @@
     "message":"Berhenti memblokir iklan:",
     "description":"Section header on the 'Customize' tab"
   },
-  "finblock_adblock_wont_run_on_pages_matching":{
+  "catblock_adblock_wont_run_on_pages_matching":{
     "message":"FinBlock won't run on any page matching:",
     "description":"Message displayed when the whitelister dialog will whitelist part of an entire website, for example '*.google.com/reader/*'.  The URL will appear on the next line."
   },
@@ -1139,7 +1139,7 @@
     "message":"Ibrani",
     "description":"language"
   },
-  "finblock_adblock_outdated_chrome":{
+  "catblock_adblock_outdated_chrome":{
     "message":"You are using an old version of FinBlock. Please go to <a href='#'>the extensions page</a>, enable 'Developer mode' and click 'Update extensions now'",
     "description":"Ad report page instructions to update AdBlock in Chrome. The link will point to 'chrome://chrome/extensions/'"
   },
@@ -1181,7 +1181,7 @@
     "message":"diperbaharui $hours$ jam lalu",
     "description":"Label for subscription"
   },
-  "finblock_status_paused":{
+  "catblock_status_paused":{
     "message":"FinBlock is paused.",
     "description":"Message shown in toolbar button when FinBlock is paused"
   },
@@ -1205,7 +1205,7 @@
     "message":"Pastikan daftar filter Anda telah diperbaharui:",
     "description":"Section header on the ad report page"
   },
-  "finblock_disabled_by_filter_lists":{
+  "catblock_disabled_by_filter_lists":{
     "message":"Sorry, FinBlock is disabled on this page by one of your filter lists.",
     "description":"Message shown when a user tries to unwhitelist a web page that has been whitelisted by a rule in a subscribed filter list"
   },
@@ -1247,7 +1247,7 @@
     "message":"Perlihatkan pernyataan debug pada Console Log (akan memperlambat AdBlock)",
     "description":"Checkbox on the 'General' tab of the Options page"
   },
-  "finblock_show_on_adblock_button":{
+  "catblock_show_on_adblock_button":{
     "message":"Show on FinBlock button",
     "description":"Label for checkbox letting user choose whether the toolbar button should show a badge with the number of ads blocked"
   },
@@ -1255,7 +1255,7 @@
     "message":"Jangan jalankan pada halama ini",
     "description":"Menu entry to whitelist a page"
   },
-  "finblock_whatmakesadblocktick":{
+  "catblock_whatmakesadblocktick":{
     "message":"Want to see what makes FinBlock tick?",
     "description":"Subtitle on the Support tab of the options"
   },
@@ -1339,7 +1339,7 @@
     "message":"Blok sebuah iklan pada halaman ini",
     "description":"Toolbar button menu entry and context menu entry"
   },
-  "finblock_tabcustomizetitle":{
+  "catblock_tabcustomizetitle":{
     "message":"Customize FinBlock",
     "description":"Title of the customize tab"
   },
@@ -1351,7 +1351,7 @@
     "message":"Daftar URL yang tidak sah. Daftar ini akan dihapus.",
     "description":"Message when you subscribe to a non-list URL"
   },
-  "finblock_pause_adblock":{
+  "catblock_pause_adblock":{
     "message":"Pause FinBlock",
     "description":"Menu entry to pause FinBlock"
   },

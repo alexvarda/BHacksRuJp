@@ -153,10 +153,6 @@ BGcall("getGuide", function(guide) {
     }
 });
 
-$("#channel-options input:text").keyup(function(event) {
-    if (event.keyCode === 13) {
-        $(this).next().click();
-    }
     // todo handle enter
 });
 

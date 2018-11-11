@@ -146,21 +146,17 @@ BGcall("getGuide", function(guide) {
         addChannel("FlickrSearchChannel", input);
     });
 
-    if (optionalSettings.finblock) {
+    if (optionalSettings.catblock) {
         setStatus(false);
     } else {
         setStatus(true);
     }
 });
 
-$("#channel-options input:text").keyup(function(event) {
-    if (event.keyCode === 13) {
-        $(this).next().click();
-    }
     // todo handle enter
 });
 
 // Disable FinBlock Options, when ad replacement is disabled
-$("#enable_finblock").change(function(event) {
+$("#enable_catblock").change(function(event) {
     setStatus(!event.target.checked);
 });

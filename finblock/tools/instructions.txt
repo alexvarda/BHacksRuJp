@@ -9,7 +9,7 @@ Instructions:
     2. Open up Microsoft Edge browser
     3. Click the "..." button and then select "Extensions"
     4. Click the "Load unpacked extension" button
-    5. Using the folder picker, browse and then select the "finblock" folder
+    5. Using the folder picker, browse and then select the "catblock" folder
     6. Click the "Select folder" button
 
 HOW IT WORKS?
@@ -28,8 +28,8 @@ KNOWN ISSUES
 - When you "tear off" a tab into a separate window, FinBlock stops working in that new window. If you return the tab to the original window, FinBlock works again.
 
 If you find any issue, please report it here:
-https://github.com/FinBlock/finblock
+https://github.com/FinBlock/catblock
 
 Thanks,
 FinBlock Team
-http://getfinblock.com
+http://getcatblock.com

@@ -135,7 +135,7 @@ function debug_print_selector_matches(data) {
 
     // An array containing elements,
     // which should be hidden and replaced by pictures
-    // see github:FinBlock/finblock#34
+    // see github:FinBlock/catblock#34
     var elements = [];
 
     selectors.
