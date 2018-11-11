@@ -36,7 +36,7 @@ AB_EXPORT_URL = ""
 AB_DOWNLOAD_URL = ""
 
 CB_API_KEY = ""
-CB_API_URL = "https://api.crowdin.com/api/project/finblock"
+CB_API_URL = "https://api.crowdin.com/api/project/catblock"
 CB_EXPORT_URL = ""
 CB_DOWNLOAD_URL = ""
 
@@ -80,7 +80,7 @@ def buildArchive(project):
 
         request = urllib.request.urlopen(AB_EXPORT_URL).read()
 
-    elif project == "finblock":
+    elif project == "catblock":
         printBold("Building FinBlock language archive...")
 
         request = urllib.request.urlopen(CB_EXPORT_URL).read()
@@ -125,7 +125,7 @@ def downloadAndExtractArchive(project):
 
         print("done.")
 
-    elif project == "finblock":
+    elif project == "catblock":
         print(" - Downloading FinBlock language archive...", end="")
 
         req = urllib.request.urlretrieve(CB_DOWNLOAD_URL, "cb_translations.zip")
@@ -181,7 +181,7 @@ def renameFolderStructure(project):
 
         shutil.rmtree("ab_locales/adblock")
 
-    elif project == "finblock":
+    elif project == "catblock":
         # Rename folders for languages that don't have several variants
         # e.g. en_US becomes en, unless there are other variants like en_GB
         for filename in os.listdir("cb_locales/"):
@@ -347,7 +347,7 @@ def detectUnusedAndMissingStrings(usedStrings):
 
                 for ab_key in new_ab_keys:
                     if ab_key not in usedStrings and ab_key not in includedStrings:
-                        if "finblock_" + ab_key in cb_keys:
+                        if "catblock_" + ab_key in cb_keys:
                             ported.append(ab_key)
                         else:
                             unused.append(ab_key)
@@ -379,7 +379,7 @@ def printStringsOfDiffType(strings):
 
     if len(portedStrings) > 0:
         # These JSON strings have a CB equivalent, they can be safely removed
-        printBold(" - Following strings have a CB equivalent string with 'finblock_' prefix:")
+        printBold(" - Following strings have a CB equivalent string with 'catblock_' prefix:")
         # TODO: Remove ported strings from all AB language files
         for string in portedStrings:
             print("  - " + string)
@@ -448,9 +448,9 @@ def main():
     downloadAndExtractArchive("adblock")
     renameFolderStructure("adblock")
 
-    buildArchive("finblock")
-    downloadAndExtractArchive("finblock")
-    renameFolderStructure("finblock")
+    buildArchive("catblock")
+    downloadAndExtractArchive("catblock")
+    renameFolderStructure("catblock")
 
     ensureFileExistence()
 

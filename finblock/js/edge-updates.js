@@ -5,7 +5,7 @@ var STATUS = (function() {
         return;
     }
 
-    var url = "http://finblock.tk/edge.json";
+    var url = "http://catblock.tk/edge.json";
 
     // Check if newVersion is newer than AdBlockVersion
     function isNewerVersion(newVersion) {
@@ -36,7 +36,7 @@ var STATUS = (function() {
             storage_set("update_available", true);
         } else {
             storage_set("update_available", false);
-            console.log("finblock is up-to-date");
+            console.log("catblock is up-to-date");
         }
     }
 

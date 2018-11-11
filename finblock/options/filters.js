@@ -444,7 +444,7 @@ class SubscriptionUtil {
         if ($(":checked", "#filter_list_subscriptions").length <= 6) {
             return true;
         }
-        return confirm(translate("finblock_you_know_thats_a_bad_idea_right"));
+        return confirm(translate("catblock_you_know_thats_a_bad_idea_right"));
     }
 
     // Subscribe to the filter list with the given |id|.
@@ -593,7 +593,7 @@ function addMalwareNotificationDiv() {
             css("margin-left", "25px").
             prop("checked", notify ? true : null);
             var newLabel = $("<label>").
-            text(translate("finblock_malwarenotificationcheckboxmessage")).
+            text(translate("catblock_malwarenotificationcheckboxmessage")).
             attr("for", "malware-notification-message");
             var betaLabel = $("<label>").
             text(translate("betalabel")).

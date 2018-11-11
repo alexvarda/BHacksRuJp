@@ -74,7 +74,7 @@ if (!SAFARI) {
 class Settings {
     constructor() {
         var defaults = {
-            finblock: true,
+            catblock: true,
             debug_logging: false,
             youtube_channel_whitelist: false,
             whitelist_hulu_ads: false, // Issue 7178
@@ -939,13 +939,13 @@ if (!SAFARI) {
             }
 
             if (adblock_is_paused()) {
-                addMenu(translate("finblock_unpause_adblock"), function() {
+                addMenu(translate("catblock_unpause_adblock"), function() {
                     adblock_is_paused(false);
                     handlerBehaviorChanged();
                     updateButtonUIAndContextMenus();
                 });
             } else {
-                addMenu(translate("finblock_pause_adblock"), function() {
+                addMenu(translate("catblock_pause_adblock"), function() {
                     adblock_is_paused(true);
                     updateButtonUIAndContextMenus();
                 });
@@ -1342,7 +1342,7 @@ function createMalwareNotification() {
                 iconUrl: chrome.runtime.getURL("img/icon48.png"),
                 type: "basic",
                 priority: 2,
-                message: translate("finblock_malwarenotificationmessage"),
+                message: translate("catblock_malwarenotificationmessage"),
                 buttons: [{ title:translate("malwarenotificationlearnmore"),
                            iconUrl:chrome.runtime.getURL("img/icon24.png") },
                           { title:translate("malwarenotificationdisablethesemessages"),
@@ -1458,7 +1458,7 @@ function getDebugInfo(callback) {
 
             if (extensionID !== "mdcgnhlfpnbeieiiccmebgkfdebafodo" &&
                 extensionID !== "pejeadkbfbppoaoinpmkeonebmngpnkk" &&
-                extensionID !== "finblock@finblock.tk") {
+                extensionID !== "catblock@catblock.tk") {
                 callback("Unsupported");
                 return;
             }

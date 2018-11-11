@@ -9,7 +9,7 @@
     <key>CFBundleDisplayName</key>
     <string>FinBlock</string>
     <key>CFBundleIdentifier</key>
-    <string>com.finblock.adblockwithfinblock</string>
+    <string>com.catblock.adblockwithcatblock</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleShortVersionString</key>
@@ -65,7 +65,7 @@
                 <string>js/bandaids.js</string>
                 <string>js/adblock_start_common.js</string>
                 <string>js/adblock_start_safari.js</string>
-                <string>finblock/contentscript.js</string>
+                <string>catblock/contentscript.js</string>
             </array>
         </dict>
     </dict>
@@ -88,6 +88,6 @@
     <key>Update From Gallery</key>
     <true/>
     <key>Website</key>
-    <string>http://getfinblock.com</string>
+    <string>http://getcatblock.com</string>
 </dict>
 </plist>

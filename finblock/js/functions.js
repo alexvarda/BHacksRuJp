@@ -213,7 +213,7 @@ function storage_set(key, value) {
         // Safari throws this error for all writes in Private Browsing mode.
         // TODO: deal with the Safari case more gracefully.
         if (ex.name === "QUOTA_EXCEEDED_ERR" && !SAFARI) {
-            alert(translate("finblock_storage_quota_exceeded"));
+            alert(translate("catblock_storage_quota_exceeded"));
             openTab("options/index.html#ui-tabs-2");
         }
     }
@@ -253,7 +253,7 @@ function sessionstorage_set(key, value) {
         sessionStorage.setItem(key, JSON.stringify(value));
     } catch (ex) {
         if (ex.name === "QUOTA_EXCEEDED_ERR" && !SAFARI) {
-            alert(translate("finblock_storage_quota_exceeded"));
+            alert(translate("catblock_storage_quota_exceeded"));
             openTab("options/index.html#ui-tabs-2");
         }
     }
@@ -266,7 +266,7 @@ function createRuleLimitExceededSafariNotification() {
         sessionstorage_set("contentblockingerror", translate("safaricontentblockinglimitexceeded"));
         chrome.runtime.sendMessage({command: "contentblockingmessageupdated"});
         var note = new Notification(translate("safarinotificationtitle"),
-                                    { "body" : translate("finblock_safarinotificationbody"), "tag" : 1 });
+                                    { "body" : translate("catblock_safarinotificationbody"), "tag" : 1 });
         note.onclick = function() {
             openTab("options/index.html?tab=0");
         };

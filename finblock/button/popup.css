@@ -100,20 +100,20 @@ input[type="checkbox"]:checked:before {
     content: '\2713';
     margin-left: 20%;
 }
-.finblock-logo {
+.catblock-logo {
     margin: 18px 0 0 15px;
 }
-.finblock-logo:hover {
+.catblock-logo:hover {
     text-decoration: none;
 }
-.finblock-logo img, .finblock-logo span {
+.catblock-logo img, .catblock-logo span {
     display: inline-block;
     vertical-align: middle;
 }
-.finblock-logo img {
+.catblock-logo img {
     width: 30px;
 }
-.finblock-logo span {
+.catblock-logo span {
     font-size: larger;
     margin-left: 5px;
 }

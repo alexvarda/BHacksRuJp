@@ -66,14 +66,6 @@ $(document).ready(function() {
         });
     });
 
-    // Report us the bug
-    $("#report a").click(function() {
-        BGcall("makeReport", function(report) {
-            var result = "https://github.com/FinBlock/finblock/issues/new?body=" + report;
-            document.location.href = result;
-        });
-    });
-
     // Show the changelog
     $("#whatsnew a").click(function() {
         var xhr = new XMLHttpRequest();

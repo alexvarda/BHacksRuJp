@@ -10,7 +10,7 @@ was detected in AdBlock's source code. Start a line with a - and it will not rep
 that string as a missing string (as if it was in the JSON files).
 
 The texts from manifest.json are not scanned
-+finblock_adblock_click_for_details
++catblock_adblock_click_for_details
 
 Keep these for future use
 +betalabel

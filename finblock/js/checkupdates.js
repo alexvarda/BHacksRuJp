@@ -22,7 +22,7 @@ function checkupdates(page) {
     }
 
     if (!EDGE) {
-        var checkURL = "https://github.com/FinBlock/finblock/releases";
+        var checkURL = "https://github.com/FinBlock/catblock/releases";
 
         // Fetch the version check file
         $.ajax({
@@ -42,20 +42,20 @@ function checkupdates(page) {
                 var version = document.querySelector(".release-timeline > .label-latest > " +
                                                      ".release-meta > .tag-references >li > .css-truncate > .css-truncate-target").textContent;
                 if (isNewerVersion(version)) {
-                    $("#checkupdate").html(translate("finblock_update_available"));
+                    $("#checkupdate").html(translate("catblock_update_available"));
                     var updateURL = $("key:contains(URL) + string", response).text();
                     $("#here").html(translate("here")).attr("href", updateURL);
                     $(".step").hide();
                 } else {
                     if (page === "help") {
                         // TODO: Change string for translation
-                        $("#checkupdate").html(translate("finblock_latest_version")).show();
+                        $("#checkupdate").html(translate("catblock_latest_version")).show();
                     }
                 }
             }
         });
     } else {
-        var checkURL = "http://getfinblock.com/edge.json";
+        var checkURL = "http://getcatblock.com/edge.json";
 
         // Fetch the version check file
         $.ajax({
@@ -73,7 +73,7 @@ function checkupdates(page) {
                 var latestVersion = response.version;
                 var redirectUrl = response.redirect_url;
                 if (isNewerVersion(latestVersion)) {
-                    $("#checkupdate").html(translate("finblock_update_available"));
+                    $("#checkupdate").html(translate("catblock_update_available"));
                     $("#here").html(translate("here")).attr("href", redirectUrl);
                     chrome.browserAction.setBadgeText({ text: "New!" });
                     storage_set("update_available", true);
@@ -83,7 +83,7 @@ function checkupdates(page) {
                     storage_set("update_available", false);
                     if (page === "help") {
                         // TODO: Change string for translation
-                        $("#checkupdate").html(translate("finblock_latest_version")).show();
+                        $("#checkupdate").html(translate("catblock_latest_version")).show();
                     }
                 }
             }

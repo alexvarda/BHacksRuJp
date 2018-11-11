@@ -48,8 +48,8 @@ def main():
 
     # Remove already unused language files,
     # which have been merged into main language files
-    if os.path.exists("finblock/_locales"):
-        shutil.rmtree("finblock/_locales")
+    if os.path.exists("catblock/_locales"):
+        shutil.rmtree("catblock/_locales")
 
     # If /builds directory doesn't exist, create it
     if not os.path.exists("builds"):
@@ -59,11 +59,11 @@ def main():
     def prepareManifestFile(browser):
         browserData = {
             "firefox": {
-                "path": "finblock_firefox/manifest.json",
+                "path": "catblock_firefox/manifest.json",
                 "key": {
                     "applications": {
                         "gecko": {
-                            "id": "finblock@finblock.tk",
+                            "id": "catblock@catblock.tk",
                             "strict_min_version": "50.0"
                         }
                     },
@@ -74,19 +74,19 @@ def main():
                 }
             },
             "edge": {
-                "path": "finblock_edge/finblock/manifest.json",
+                "path": "catblock_edge/catblock/manifest.json",
                 "key": {
                     "minimum_edge_version": "38.14342.1000.0"
                 }
             },
             "chrome": {
-                "path": "finblock_chrome/manifest.json",
+                "path": "catblock_chrome/manifest.json",
                 "key": {
                     "minimum_chrome_version": "58"
                 }
             },
             "opera": {
-                "path": "finblock_opera/manifest.json",
+                "path": "catblock_opera/manifest.json",
                 "key": {
                     "minimum_opera_version": "45"
                 }
@@ -128,8 +128,8 @@ def main():
         if browser != "Chrome":
             return
 
-        # Making finblock-chrome.zip file available in PRs coming from forks
-        shutil.make_archive("finblock-chrome", "zip", "finblock_chrome")
+        # Making catblock-chrome.zip file available in PRs coming from forks
+        shutil.make_archive("catblock-chrome", "zip", "catblock_chrome")
 
         # BS_API key is not exported in build process for forks
         if os.environ.get("BS_API") == None and os.environ.get("TRAVIS") != None:
@@ -144,7 +144,7 @@ def main():
             print("  - Running QUnit tests on BrowserStack...", end="")
 
             chop = webdriver.ChromeOptions()
-            chop.add_extension("finblock-chrome.zip")
+            chop.add_extension("catblock-chrome.zip")
             chop = chop.to_capabilities()
 
             chop["os"] = "OS X"
@@ -179,27 +179,27 @@ def main():
         browsers = {
             "chrome": {
                 "name": "Chrome",
-                "path": "finblock_chrome",
-                "extname": "finblock-chrome",
+                "path": "catblock_chrome",
+                "extname": "catblock-chrome",
                 "platformpkgsuffix": ".crx"
             },
             "opera": {
                 "name": "Opera",
-                "path": "finblock_opera",
-                "extname": "finblock-opera",
-                "extpkgname": "finblock-opera",
+                "path": "catblock_opera",
+                "extname": "catblock-opera",
+                "extpkgname": "catblock-opera",
                 "platformpkgsuffix": ".nex"
             },
             "firefox": {
                 "name": "Firefox",
-                "path": "finblock_firefox",
-                "extname": "finblock-firefox",
+                "path": "catblock_firefox",
+                "extname": "catblock-firefox",
                 "platformpkgsuffix": ".xpi"
             },
             "edge": {
                 "name": "Edge",
-                "path": "finblock_edge",
-                "extname": "finblock-edge",
+                "path": "catblock_edge",
+                "extname": "catblock-edge",
                 "platformpkgsuffix": "None"
             }
         }
@@ -227,12 +227,12 @@ def main():
             else:
                 shutil.copytree(os.getcwd(), BROWSER_PATH, ignore=shutil.ignore_patterns(".*", "builds", "tools"))
         else:
-            # Copy the content of the original folder into /finblock_edge/finblock and ignore hidden files and builds folder
-            shutil.copytree(os.getcwd(), BROWSER_PATH + "/finblock", ignore=shutil.ignore_patterns(".*", "builds"))
+            # Copy the content of the original folder into /catblock_edge/catblock and ignore hidden files and builds folder
+            shutil.copytree(os.getcwd(), BROWSER_PATH + "/catblock", ignore=shutil.ignore_patterns(".*", "builds"))
 
-            # Copy instructions file and setup file into "/finblock_edge" folder
-            shutil.move(BROWSER_PATH + "/finblock/tools/instructions.txt", BROWSER_PATH)
-            shutil.move(BROWSER_PATH + "/finblock/tools/Setup.cmd", BROWSER_PATH)
+            # Copy instructions file and setup file into "/catblock_edge" folder
+            shutil.move(BROWSER_PATH + "/catblock/tools/instructions.txt", BROWSER_PATH)
+            shutil.move(BROWSER_PATH + "/catblock/tools/Setup.cmd", BROWSER_PATH)
 
         # Prepare manifest.json file
         prepareManifestFile(browser)
