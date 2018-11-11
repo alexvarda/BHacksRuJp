@@ -169,6 +169,8 @@ class Channel {
         this.__listings = [];
     }
 
+
+
     getListings() {
         return this.__listings.slice(0); // shallow copy
     }
@@ -196,50 +198,58 @@ class Channel {
     }
 }
 
+var news = null;
 // Channel containing hard coded cats loaded from disk.
 class AprilFoolsCatsChannel extends Channel {
     constructor() {
-        super();
+      super();
     }
 
-    _getLatestListings(callback) {
-        function L(w, h, f) {
-            var folder = chrome.runtime.getURL("catblock/pix/");
-            return new Listing({
-                width: w, height: h, url: "https://www.ccn.com/wp-content/uploads/2018/11/power-ledger-jemma-green.jpg",
-                attribution_url: "https://www.ccn.com/interview-power-ledgers-jemma-green-on-using-blockchain-to-power-the-world/",
-                title: "This is a FinTech Post!"
-            });
-        }
-        // the listings never change
-        callback([
-            L(270, 256, "5.jpg"),
-            L(350, 263, "6.jpg"),
-            L(228, 249, "big1.jpg"),
-            L(236, 399, "big2.jpg"),
-            L(340, 375, "big3.jpg"),
-            L(170, 240, "big4.jpg"),
-            L(384, 288, "1.jpg"),
-            L(132, 91, "7.jpg"),
-            L(121, 102, "9.jpg"),
-            L(115, 125, "small1.jpg"),
-            L(126, 131, "small2.jpg"),
-            L(105, 98, "small3.jpg"),
-            L(135, 126, "small4.jpg"),
-            L(133, 108, "small5.jpg"),
-            L(120, 99, "small6.jpg"),
-            L(124, 96, "small7.jpg"),
-            L(119, 114, "small8.jpg"),
-            L(382, 137, "wide1.jpg"),
-            L(470, 102, "wide2.jpg"),
-            L(251, 90, "wide3.jpg"),
-            L(469, 162, "wide4.jpg"),
-            L(240, 480, "8.jpg"),
-            L(103, 272, "tall3.jpg"),
-            L(139, 401, "tall4.jpg"),
-            L(129, 320, "tall5.jpg"),
-            L(109, 385, "tall6.jpg")
-        ]);
+    getNews() {
+      var url = 'https://newsapi.org/v2/everything?' +
+          'q=fintech&' +
+          'from=2018-11-10&' +
+          'sortBy=popularity&' +
+          'apiKey=d66b2b805662461084b13f97ae31d880';
+      var req = new Request(url);
+
+      const request = async () => {
+        const response = await fetch(req);
+        news = await response.json();
+        console.log(news);
+      }
+      request();
+    }
+
+    async _getLatestListings(callback) {
+       this.getNews();
+       if (news === null) {
+         setTimeout(function(){
+            console.log(news.status);
+            console.log(news.articles[0].title);
+
+            function L(w, h, data) {
+                var folder = chrome.runtime.getURL("catblock/pix/");
+                return new Listing({
+                    width: w, height: h, url: data.urlToImage,
+                    attribution_url: data.url,
+                    title: data.title
+                });
+            }
+            // the listings never change
+            callback([
+                L(270, 256, news.articles[0]),
+                L(350, 263, news.articles[1]),
+                L(228, 249, news.articles[2]),
+                L(236, 399, news.articles[3]),
+                L(340, 375, news.articles[4]),
+                L(170, 240, news.articles[5]),
+                L(384, 288, news.articles[6]),
+            ]);
+
+          },3000);
+       }
+
     }
 
 }
