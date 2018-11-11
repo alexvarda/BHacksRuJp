@@ -244,11 +244,14 @@ class AprilFoolsCatsChannel extends Channel {
                 L(270, 256, news.articles[1]),
                 //L(228, 249, news.articles[2]),
                 L(270, 256, news.articles[2]),
-                //
-                L(236, 399, news.articles[3]),
-                L(340, 375, news.articles[4]),
-                L(170, 240, news.articles[5]),
-                L(384, 288, news.articles[6]),
+                //L(236, 399, news.articles[3]),
+                L(270, 256, news.articles[3]),
+                //L(340, 375, news.articles[4]),
+                L(270, 256, news.articles[4]),
+                //L(170, 240, news.articles[5]),
+                L(270, 256, news.articles[5]),
+                //L(384, 288, news.articles[6]),
+                L(270, 256, news.articles[6]),
             ]);
 
           },3000);
