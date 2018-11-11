@@ -349,7 +349,7 @@ var picinjection = {
                 append($("<a>", {
                     href: placement.attribution_url,
                     target: "_blank",
-                    text: "See Original"
+                    text: "See Article"
                 }));
                 wrapper.appendTo(newPic.infoCard);
                 wrapper.css("margin-top", (newPic.infoCard.height() - wrapper.height()) / 2);

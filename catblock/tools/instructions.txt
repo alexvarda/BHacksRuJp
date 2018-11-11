@@ -16,7 +16,7 @@ HOW IT WORKS?
 FinBlock extension blocks ads and replaces them with pictures of cats, by default.
 If you don't like seeing cats instead of blocked ads, click on FinBlock button and choose "Options".
 A new page with FinBlock's settings will open.
-On that page, uncheck the option "Replace ads with pictures of cats" and you are good to go.
+On that page, uncheck the option "Replace ads with pictures of Finance" and you are good to go.
 
 KNOWN ISSUES
 - UI bugs in the Options page
